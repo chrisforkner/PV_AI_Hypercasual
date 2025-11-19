@@ -1,0 +1,20 @@
+{
+    "asset": "f8121d99e9955f148957ed925ff145d8",
+    "fileName": "019a9906-83f5-7a8a-a2fc-e9b6c02c288e.png",
+    "prompt": "marble tile",
+    "negativePrompt": "",
+    "model": "c7f87f2e-1349-4072-b22b-784ba53c1e1c",
+    "modelName": "Flux.1 Pro",
+    "customSeed": -1,
+    "w3CTraceId": "03a5a52df6f71448d8e253013af65467",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

@@ -1,0 +1,11 @@
+{
+    "asset": "29f107fa159188a41be843dad2b0e9bf",
+    "fileName": "019a98d5-4b31-793c-83a2-da88dc181f6d.pose.json",
+    "prompt": "running, waving hands in the air, stationary",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 837502876,
+    "w3CTraceId": "cd5aff7d9d084349d77bedbf5711659f",
+    "isTrimmed": false
+}
