@@ -119,6 +119,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &89395884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89395887}
+  - component: {fileID: 89395886}
+  - component: {fileID: 89395885}
+  m_Layer: 0
+  m_Name: GameOverUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &89395885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89395884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b8614a2c4347a46a276ccf36833518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowGameOverUIOnEvent
+--- !u!114 &89395886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89395884}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 18e3f30cdb8059f4c930c4bc51d89917, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 237fb670f57d66442abbd17064d63bd7, type: 3}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!4 &89395887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89395884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &221372349
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +854,6 @@ MonoBehaviour:
   fireRate: 0.5
   bulletPoolSpawner: {fileID: 991230707}
   playerScoreUI: {fileID: 221372353}
-  explosionSpawner: {fileID: 622224286}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,6 +1072,7 @@ GameObject:
   - component: {fileID: 1356519872}
   - component: {fileID: 1356519873}
   - component: {fileID: 1356519874}
+  - component: {fileID: 1356519875}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -1060,6 +1128,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ExplosionSpawner
   objectPoolSpawner: {fileID: 622224286}
   spawnOffset: {x: 0, y: 1, z: 0}
+--- !u!114 &1356519875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356519870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050328a3762e3c84db5038f41caad861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOverHandler
+  mainMenuSceneName: MainMenu
 --- !u!1 &1629421889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,3 +1233,4 @@ SceneRoots:
   - {fileID: 1639560269}
   - {fileID: 456273415}
   - {fileID: 221372351}
+  - {fileID: 89395887}

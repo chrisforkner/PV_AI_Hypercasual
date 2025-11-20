@@ -17,6 +17,23 @@ public class EnemySpawnerByDifficulty : MonoBehaviour
     public float SpawnLocationZ;
     public float SpawnLocationXRange;
 
+    private bool isGameOver = false;
+
+    private void OnEnable()
+    {
+        GameEvents.OnGameOver += HandleGameOver;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnGameOver -= HandleGameOver;
+    }
+
+    private void HandleGameOver()
+    {
+        isGameOver = true;
+    }
+
     private void Start()
     {
         SetSpawnRate();
@@ -25,6 +42,7 @@ public class EnemySpawnerByDifficulty : MonoBehaviour
 
     private void Update()
     {
+        if (isGameOver) return;
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0f)
         {

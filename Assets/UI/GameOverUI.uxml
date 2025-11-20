@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GameOverUI.uss?fileID=7433441132597879392&amp;guid=86fb3c7c51c5db54182c6f1a8f8de38d&amp;type=3#GameOverUI"/>
+    <ui:VisualElement name="game-over-container" class="game-over-root" style="background-color: rgba(0, 0, 0, 0.75);">
+        <ui:Label text="Game Over" class="game-over-text"/>
+    </ui:VisualElement>
+</ui:UXML>

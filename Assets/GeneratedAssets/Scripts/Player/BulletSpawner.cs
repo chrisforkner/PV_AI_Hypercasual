@@ -12,47 +12,31 @@ public class BulletSpawner : MonoBehaviour
     public PlayerScoreUI playerScoreUI;
 
     private float nextFireTime = 0f;
-private bool isGameOver = false;
+    private bool isGameOver = false;
 
-private void OnEnable()
-{
-    EventManager.Subscribe(EventManager.GameOverEvent, OnGameOver);
-}
+    private void OnEnable()
+    {
+        EventManager.Subscribe(EventManager.GameOverEvent, OnGameOver);
+    }
 
-private void OnDisable()
-{
-    EventManager.Unsubscribe(EventManager.GameOverEvent, OnGameOver);
-}
+    private void OnDisable()
+    {
+        EventManager.Unsubscribe(EventManager.GameOverEvent, OnGameOver);
+    }
 
-private void OnGameOver()
-{
-    isGameOver = true;
-}
+    private void OnGameOver()
+    {
+        isGameOver = true;
+    }
 
     void Update()
-{
-    if (isGameOver)
-    {
-        return;
-    }
-
-    if (Time.time >= nextFireTime)
-    {
-        SpawnBullet();
-        nextFireTime = Time.time + fireRate; // Schedule next shot
-    }
-}
-{
-    if (isGameOver)
-    {
-        return;
-    }
     {
         if (isGameOver)
-{
-    return;
-}
-if (Time.time >= nextFireTime)
+        {
+            return;
+        }
+
+        if (Time.time >= nextFireTime)
         {
             SpawnBullet();
             nextFireTime = Time.time + fireRate; // Schedule next shot

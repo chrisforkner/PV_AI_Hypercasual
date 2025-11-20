@@ -1,0 +1,46 @@
+:root {
+    --space-4: 16px;
+    --color-bg: #1f1f1f;
+    --color-title: #ffffff;
+    --color-btn-bg: #4da3ff;
+    --color-btn-text: #000000;
+    --color-btn-bg-hover: #5db2ff;
+}
+
+.menu-root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.title {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: var(--color-title);
+    margin-bottom: var(--space-4);
+}
+
+.button {
+    min-width: 160px;
+    height: 40px;
+    margin-top: var(--space-4);
+    border-radius: 6px;
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
+    font-size: 16px;
+    -unity-font-style: bold;
+}
+
+.button:hover {
+    background-color: var(--color-btn-bg-hover);
+}

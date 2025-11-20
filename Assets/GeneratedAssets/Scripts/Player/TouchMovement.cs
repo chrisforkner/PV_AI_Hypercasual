@@ -10,11 +10,29 @@ public class TouchMovement : MonoBehaviour
     public float moveSpeed = 5f; // Speed of the character movement
     private Vector2 touchPosition;
     private bool isTouching;
+    private bool isGameOver;
     public float MovementRangeXMin;
     public float MovementRangeXMax;
 
+    private void OnEnable()
+    {
+        EventManager.Subscribe(EventManager.GameOverEvent, OnGameOver);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.Unsubscribe(EventManager.GameOverEvent, OnGameOver);
+    }
+
+    private void OnGameOver()
+    {
+        isGameOver = true;
+    }
+
     private void Update()
     {
+        if (isGameOver) return;
+
         isTouching = Mouse.current.press.isPressed || Touch.activeTouches.Count > 0;
 
         if (isTouching)

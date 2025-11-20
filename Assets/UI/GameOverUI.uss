@@ -1,0 +1,20 @@
+:root {
+    --color-bg: rgba(0, 0, 0, 0.2);
+    --color-text: #ff3b3b;
+    --font-size-title: 48px;
+}
+
+.game-over-root {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg);
+}
+
+.game-over-text {
+    color: var(--color-text);
+    font-size: var(--font-size-title);
+    -unity-font-style: bold;
+}

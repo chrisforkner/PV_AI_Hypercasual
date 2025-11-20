@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:Style src="MainMenu.uss" />
+    <ui:VisualElement name="main-menu" class="menu-root">
+        <ui:Label text="Hypercasual AI Demo" class="title" />
+        <ui:Button name="startButton" text="Start Game" class="button" />
+        <ui:Button name="exitButton" text="Exit" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
