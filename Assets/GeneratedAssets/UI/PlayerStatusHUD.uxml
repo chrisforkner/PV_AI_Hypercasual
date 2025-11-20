@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/GeneratedAssets/UI/PlayerStatusHUD.uss?fileID=7433441132597879392&amp;guid=57afa5d589d963149b13732a31c7d60b&amp;type=3#PlayerStatusHUD"/>
+    <ui:VisualElement name="player-status-root" class="hud-root" style="height: 15%;">
+        <ui:VisualElement class="health-container">
+            <ui:Label text="Health" class="health-label" style="font-size: 20%;"/>
+            <ui:VisualElement class="health-bar">
+                <ui:VisualElement name="health-fill" class="health-fill" style="width: 100%;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Label name="score-label" text="Score: 0" class="score-label"/>
+    </ui:VisualElement>
+</ui:UXML>

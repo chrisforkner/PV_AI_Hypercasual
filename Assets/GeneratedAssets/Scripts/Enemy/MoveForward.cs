@@ -17,6 +17,21 @@ public class MoveForward : MonoBehaviour
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
+    private void OnEnable()
+    {
+        EventManager.Subscribe(EventManager.GameOverEvent, OnGameOver);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.Unsubscribe(EventManager.GameOverEvent, OnGameOver);
+    }
+
+    private void OnGameOver()
+    {
+        speed = 0f;
+    }
+
     // Optional: Method to set the speed dynamically
     public void SetSpeed(float newSpeed)
     {

@@ -1,0 +1,61 @@
+:root {
+    --space-2: 8px;
+    --space-4: 16px;
+    --color-bg: rgba(0, 0, 0, 0.5);
+    --color-health: #e74c3c;
+    --color-score: #f1c40f;
+    --color-text: #ffffff;
+    --bar-height: 20px;
+    --bar-radius: 10px;
+}
+
+.hud-root {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-4);
+    background-color: var(--color-bg);
+    width: 100%;
+    min-height: 60px;
+}
+
+.health-container {
+    flex: 1 1 100%;
+    margin-bottom: var(--space-4);
+}
+
+.score-label {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.health-container {
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: var(--space-4);
+}
+
+.health-label {
+    color: var(--color-text);
+    font-size: 14px;
+    margin-bottom: var(--space-2);
+}
+
+.health-bar {
+    height: var(--bar-height);
+    background-color: rgba(255,255,255,0.1);
+    border-radius: var(--bar-radius);
+    justify-content: flex-start;
+}
+
+.health-fill {
+    height: var(--bar-height);
+    background-color: var(--color-health);
+    border-radius: var(--bar-radius);
+}
+
+.score-label {
+    color: var(--color-score);
+    font-size: 18px;
+}

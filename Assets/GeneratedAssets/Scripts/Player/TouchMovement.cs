@@ -21,7 +21,7 @@ public class TouchMovement : MonoBehaviour
         {
             touchPosition = Mouse.current.position.value;
             
-#if UNITY_ANDROID
+#if UNITY_ANDROID && !UNITY_EDITOR
             touchPosition = Touch.activeTouches[0].screenPosition;
 #endif
 
