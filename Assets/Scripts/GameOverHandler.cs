@@ -11,17 +11,17 @@ public class GameOverHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEvents.OnGameOver += HandleGameOver;
+        EventManager.Subscribe(EventManager.GameOverEvent, HandleGameOver);
     }
 
     private void OnDisable()
     {
-        GameEvents.OnGameOver -= HandleGameOver;
+        EventManager.Unsubscribe(EventManager.GameOverEvent, HandleGameOver);
     }
 
     public void Update()
     {
-        if(isGameOver && Mouse.current.press.isPressed || Touch.activeTouches.Count > 0)
+        if((Mouse.current.press.isPressed || Touch.activeTouches.Count > 0) && isGameOver)
         {
             SceneManager.LoadScene(mainMenuSceneName);
         }
