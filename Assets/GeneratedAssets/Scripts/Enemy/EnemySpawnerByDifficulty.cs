@@ -21,12 +21,12 @@ public class EnemySpawnerByDifficulty : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEvents.OnGameOver += HandleGameOver;
+        EventManager.Subscribe(EventManager.GameOverEvent, HandleGameOver);
     }
 
     private void OnDisable()
     {
-        GameEvents.OnGameOver -= HandleGameOver;
+        EventManager.Unsubscribe(EventManager.GameOverEvent, HandleGameOver);
     }
 
     private void HandleGameOver()
