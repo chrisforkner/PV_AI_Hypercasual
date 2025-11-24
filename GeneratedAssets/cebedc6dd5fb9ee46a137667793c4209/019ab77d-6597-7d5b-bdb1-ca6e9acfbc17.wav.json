@@ -1,0 +1,13 @@
+{
+    "asset": "cebedc6dd5fb9ee46a137667793c4209",
+    "fileName": "019ab77d-6597-7d5b-bdb1-ca6e9acfbc17.wav",
+    "prompt": "game over jingle",
+    "negativePrompt": "",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "cf2420af85932c42482ded1c67d8da49",
+    "duration": 5.0,
+    "autoTrim": false,
+    "hasReference": false
+}

@@ -1,0 +1,13 @@
+{
+    "asset": "b757b6cc375332b4394bf61f464f993a",
+    "fileName": "019ab75c-2e31-713a-af4a-cd2dc91b3048.wav",
+    "prompt": "gun shooting, pew pew",
+    "negativePrompt": "",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "b85d60fe404235975ce230568be7f495",
+    "duration": 1.0,
+    "autoTrim": false,
+    "hasReference": false
+}

@@ -1,0 +1,13 @@
+{
+    "asset": "cebedc6dd5fb9ee46a137667793c4209",
+    "fileName": "019ab77e-6cd0-75bd-ae2d-821c5d15cf14.wav",
+    "prompt": "game over jingle, sad, dramatic",
+    "negativePrompt": "",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "c12f8ff91e1075014e2b4977f1ab669f",
+    "duration": 5.0,
+    "autoTrim": false,
+    "hasReference": false
+}

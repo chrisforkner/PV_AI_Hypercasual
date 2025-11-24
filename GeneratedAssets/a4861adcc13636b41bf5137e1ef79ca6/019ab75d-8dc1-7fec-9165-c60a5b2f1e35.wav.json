@@ -1,0 +1,13 @@
+{
+    "asset": "a4861adcc13636b41bf5137e1ef79ca6",
+    "fileName": "019ab75d-8dc1-7fec-9165-c60a5b2f1e35.wav",
+    "prompt": "cyberpunk beat, industrial music",
+    "negativePrompt": "",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "6b43d3f1296dd54f063b925e410eee99",
+    "duration": 10.0,
+    "autoTrim": false,
+    "hasReference": false
+}

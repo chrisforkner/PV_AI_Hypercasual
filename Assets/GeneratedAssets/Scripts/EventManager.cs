@@ -9,6 +9,7 @@ public static class EventManager
     public const string BackWallTriggeredEvent = "BackWallTriggeredEvent";
     public const string GameOverEvent = "GameOverEvent";
     public const string PowerUpHit = "PowerUpHit";
+    public const string BulletShot = "BulletShot";
 
     private static Dictionary<string, Delegate> eventDictionary = new Dictionary<string, Delegate>();
 

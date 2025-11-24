@@ -1,0 +1,13 @@
+{
+    "asset": "cebedc6dd5fb9ee46a137667793c4209",
+    "fileName": "019ab761-01f1-7cbd-8488-2704ca2b3abf.wav",
+    "prompt": "sad game over",
+    "negativePrompt": "",
+    "model": "ee31b223-3fe1-4ae6-bf54-d8a80bb4b0e1",
+    "modelName": "Text to Sound",
+    "customSeed": -1,
+    "w3CTraceId": "9e0c521af87f2327087f994731b1bca9",
+    "duration": 0.000022675736545352265,
+    "autoTrim": true,
+    "hasReference": true
+}

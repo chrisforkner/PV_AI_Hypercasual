@@ -1,0 +1,13 @@
+{
+    "asset": "a4861adcc13636b41bf5137e1ef79ca6",
+    "fileName": "019ab75f-66ae-70ee-ac11-b0492cf77ada.wav",
+    "prompt": "8 bit simple beat, industrial",
+    "negativePrompt": "",
+    "model": "5de0686a-fb27-40e5-9df0-28ae810d70ca",
+    "modelName": "ElevenLabs Sound Effects V2",
+    "customSeed": -1,
+    "w3CTraceId": "5272fae69a75688b9421e503711566ed",
+    "duration": 10.0,
+    "autoTrim": false,
+    "hasReference": false
+}

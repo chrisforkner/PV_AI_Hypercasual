@@ -17,11 +17,22 @@ public class BulletSpawner : MonoBehaviour
     private void OnEnable()
     {
         EventManager.Subscribe(EventManager.GameOverEvent, OnGameOver);
+        EventManager.Subscribe(EventManager.PowerUpHit, OnPowerUpHit);
     }
 
     private void OnDisable()
     {
         EventManager.Unsubscribe(EventManager.GameOverEvent, OnGameOver);
+        EventManager.Unsubscribe(EventManager.PowerUpHit, OnPowerUpHit);
+    }
+
+    [Header("PowerUp Settings")]
+    public float PowerUpIncrease = 0.1f; // Amount to decrease fire rate when a power-up is hit (lower fireRate means faster shooting)
+
+    private void OnPowerUpHit()
+    {
+        Debug.Log("PowerUpHit event received in BulletSpawner.");
+        fireRate = Mathf.Max(0.01f, fireRate - PowerUpIncrease); // Reduce fireRate to shoot faster, with a lower limit
     }
 
     private void OnGameOver()
@@ -54,6 +65,7 @@ public class BulletSpawner : MonoBehaviour
                 var collision = bullet.GetComponent<BulletCollision>();
                 collision.poolSpawner = bulletPoolSpawner;
                 collision.playerScoreUI = playerScoreUI;
+                EventManager.TriggerEvent(EventManager.BulletShot);
             }
         }
         else
