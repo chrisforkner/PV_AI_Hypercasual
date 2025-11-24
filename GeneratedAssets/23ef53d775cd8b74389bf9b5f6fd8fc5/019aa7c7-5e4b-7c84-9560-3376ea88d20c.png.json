@@ -1,0 +1,24 @@
+{
+    "asset": "23ef53d775cd8b74389bf9b5f6fd8fc5",
+    "fileName": "019aa7c7-5e4b-7c84-9560-3376ea88d20c.png",
+    "prompt": "dark environment, skybox",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "6a5a30fceb1df98dcf2c7f3c11a1b7ec",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0,
+    "dimensions": {
+        "width": 1024,
+        "height": 1024
+    }
+}
