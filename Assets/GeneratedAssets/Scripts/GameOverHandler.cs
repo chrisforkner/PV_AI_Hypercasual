@@ -8,6 +8,7 @@ public class GameOverHandler : MonoBehaviour
     [SerializeField] private string mainMenuSceneName = "MainMenu";
 
     private bool isGameOver = false;
+    private float gameOverTime;
 
     private void OnEnable()
     {
@@ -21,7 +22,7 @@ public class GameOverHandler : MonoBehaviour
 
     public void Update()
     {
-        if((Mouse.current.press.isPressed || Touch.activeTouches.Count > 0) && isGameOver)
+        if ((Mouse.current.press.isPressed || Touch.activeTouches.Count > 0) && isGameOver && Time.time - gameOverTime >= 5f)
         {
             SceneManager.LoadScene(mainMenuSceneName);
         }
@@ -30,5 +31,6 @@ public class GameOverHandler : MonoBehaviour
     private void HandleGameOver()
     {
         isGameOver = true;
+        gameOverTime = Time.time;
     }
 }

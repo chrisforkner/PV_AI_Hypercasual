@@ -1,0 +1,11 @@
+{
+    "asset": "a731e1b143ef9ef4aadca6ffd1e0c060",
+    "fileName": "019ab826-c882-76be-99d9-9e377650a2bc.pose.json",
+    "prompt": "standing still, aiming gun forward",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 2142194365,
+    "w3CTraceId": "7f6c350571f5a5a0f9762a88ad26d8c1",
+    "isTrimmed": false
+}

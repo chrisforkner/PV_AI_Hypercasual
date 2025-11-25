@@ -1,0 +1,11 @@
+{
+    "asset": "da58dbf7812fe204a982e92be55838db",
+    "fileName": "019ab825-a4b3-7daa-951c-18796b2eafd3.pose.json",
+    "prompt": "strafe left, stay in place, aiming gun forward",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 1438795383,
+    "w3CTraceId": "365d95df3b44a2e25439ff7389a3dc50",
+    "isTrimmed": false
+}

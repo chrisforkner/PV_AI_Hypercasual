@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6646d29e9044016459ac71b30c5becf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: -50
+  speed: 50
 --- !u!114 &7826291419495002440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +143,8 @@ MonoBehaviour:
   enemyTag: Enemy
   poolSpawner: {fileID: 0}
   bulletDamage: 1
+  explosionSpawner: {fileID: 0}
+  playerScoreUI: {fileID: 0}
 --- !u!54 &6347437137991306041
 Rigidbody:
   m_ObjectHideFlags: 0

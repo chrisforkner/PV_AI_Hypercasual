@@ -1,0 +1,11 @@
+{
+    "asset": "a731e1b143ef9ef4aadca6ffd1e0c060",
+    "fileName": "019ab826-8851-71cd-9bbe-94ee57d27916.pose.json",
+    "prompt": "standing still, looking around",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 119065372,
+    "w3CTraceId": "749763ca07eb3874909b5f927b05dbf3",
+    "isTrimmed": false
+}
